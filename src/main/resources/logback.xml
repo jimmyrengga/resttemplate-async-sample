@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+        <property resource="appinfo.properties" />
+ 
+        <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+                <encoder>
+                        <pattern>%d [%-5level][%class{1}:%line] %msg %n</pattern>
+                </encoder>
+        </appender>
+ 
+<!--        <logger name="iso8583" level="INFO">
+                <appender-ref ref="isomsgout" />
+        </logger>-->
+ 
+        <root level="INFO">
+                <appender-ref ref="stdout" />
+        </root>
+ 
+</configuration>
