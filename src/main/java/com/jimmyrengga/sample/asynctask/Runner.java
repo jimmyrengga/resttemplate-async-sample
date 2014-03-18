@@ -33,8 +33,8 @@ public class Runner {
         
         logger.info("Scheduler is start");
         
-//        runAsync();
-        runSync();
+        runAsync();
+//        runSync();
         
         logger.info("Scheduler is finish");
         
